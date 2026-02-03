@@ -1,0 +1,1 @@
+2025-05-08 00:11:25,585 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-%d] Resolving eureka endpoints via configuration

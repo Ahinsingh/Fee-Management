@@ -1,0 +1,389 @@
+2025-03-14 06:15:12,575 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=8h24m3s9ms330µs700ns).
+2025-03-14 06:30:39,533 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=10m26s844ms490µs300ns).
+2025-03-14 06:55:58,037 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=13m48s320ms434µs600ns).
+2025-03-14 07:39:15,597 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=37m47s462ms744µs800ns).
+2025-03-14 07:59:17,566 WARN org.camunda.bpm.engine.telemetry [Camunda BPM Runtime Telemetry Reporter] ENGINE-28002 Could not send initial telemetry data. Reason: ConnectorRequestException with message 'HTCL-02007 Unable to execute HTTP request'. Set this logger to DEBUG/FINE for the full stacktrace.
+2025-03-14 07:59:17,571 WARN org.camunda.bpm.engine.telemetry [Camunda BPM Runtime Telemetry Reporter] ENGINE-28002 Could not send initial telemetry data. Reason: ConnectorRequestException with message 'HTCL-02007 Unable to execute HTTP request'. Set this logger to DEBUG/FINE for the full stacktrace.
+2025-03-14 07:59:17,575 WARN org.camunda.bpm.engine.telemetry [Camunda BPM Runtime Telemetry Reporter] ENGINE-28002 Could not send initial telemetry data. Reason: ConnectorRequestException with message 'HTCL-02007 Unable to execute HTTP request'. Set this logger to DEBUG/FINE for the full stacktrace.
+2025-03-14 08:18:19,863 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=17m33s869ms949µs600ns).
+2025-03-14 10:28:23,937 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=1h7m32s942ms137µs600ns).
+2025-03-14 12:21:33,767 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=1h19m39s340ms928µs800ns).
+2025-03-14 12:31:51,374 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-9 housekeeper] HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=7m17s558ms11µs).
+2025-03-14 13:02:15,681 INFO com.feeprocess.workflow.delegates.VerifyStudent [http-nio-10101-exec-7] Timestamp:1741942935681:workflow-service-info:Verify Student:Check its a valid student
+2025-03-14 13:02:15,775 INFO com.feeprocess.workflow.delegates.VerifyStudent [http-nio-10101-exec-7] Timestamp:1741942935775:workflow-service-info:Verify Student:we can processing the fee
+2025-03-14 13:02:15,778 INFO com.feeprocess.workflow.delegates.CheckDueAmount [http-nio-10101-exec-7] Timestamp:1741942935778:workflow-service-info:Verify Student:Check its a valid student
+2025-03-14 13:02:15,785 INFO com.feeprocess.workflow.delegates.CheckDueAmount [http-nio-10101-exec-7] Timestamp:1741942935785:workflow-service-info:Verify Student:we can processing the fee
+2025-03-14 13:02:15,788 INFO com.feeprocess.workflow.delegates.PaymentProcess [http-nio-10101-exec-7] Timestamp:1741942935788:workflow-service-info:Check Payment Done:Check Payment Done
+2025-03-14 13:02:15,912 INFO org.mongodb.driver.connection [http-nio-10101-exec-7] Opened connection [connectionId{localValue:19, serverValue:510}] to localhost:27017
+2025-03-14 13:02:16,091 INFO com.feeprocess.workflow.delegates.PaymentProcess [http-nio-10101-exec-7] Timestamp:1741942936091:workflow-service-info:Verify_Payment:Payment Success
+2025-03-14 13:02:16,115 INFO com.feeprocess.workflow.delegates.GenerateReceipt [http-nio-10101-exec-7] Timestamp:1741942936115:workflow-service-info:Prepare PDF File:Follow below to make PDF file
+2025-03-14 13:02:16,192 INFO com.feeprocess.workflow.delegates.GenerateReceipt [http-nio-10101-exec-7] Timestamp:1741942936192:workflow-service-info:STEP 1:Do all the configurations are fetch the record from DB to generate recipt.
+2025-03-14 13:02:16,192 INFO com.feeprocess.workflow.delegates.GenerateReceipt [http-nio-10101-exec-7] Timestamp:1741942936192:workflow-service-info:Generating Recipt:You will get the recipt via mail...
+2025-03-14 13:02:16,211 ERROR org.camunda.bpm.engine.context [http-nio-10101-exec-7] ENGINE-16004 Exception while closing command context: Cannot invoke "com.feeprocess.model.FinancicalRecord.setPaidAmount(double)" because "finRecord" is null
+java.lang.NullPointerException: Cannot invoke "com.feeprocess.model.FinancicalRecord.setPaidAmount(double)" because "finRecord" is null
+	at com.feeprocess.workflow.delegates.UpdateFinancialRecord.execute(UpdateFinancialRecord.java:46)
+	at org.camunda.bpm.engine.impl.bpmn.delegate.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:40)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:58)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:92)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:63)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior$3.call(ServiceTaskDelegateExpressionActivityBehavior.java:118)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior$3.call(ServiceTaskDelegateExpressionActivityBehavior.java:102)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.AbstractBpmnActivityBehavior.executeWithErrorPropagation(AbstractBpmnActivityBehavior.java:90)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.performExecution(ServiceTaskDelegateExpressionActivityBehavior.java:127)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.TaskActivityBehavior.execute(TaskActivityBehavior.java:69)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:61)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:50)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueIfExecutionDoesNotAffectNextOperation(PvmExecutionImpl.java:2039)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:42)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:31)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:634)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:608)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$6.callback(PvmExecutionImpl.java:1978)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$6.callback(PvmExecutionImpl.java:1975)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:2045)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1994)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1975)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:60)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:30)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:66)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:76)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:643)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:76)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:643)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:76)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:643)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:634)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:608)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionCreateScope.scopeCreated(PvmAtomicOperationTransitionCreateScope.java:38)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:54)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:118)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:634)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:608)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.start(PvmExecutionImpl.java:288)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.start(ExecutionEntity.java:460)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.start(PvmExecutionImpl.java:264)
+	at org.camunda.bpm.engine.impl.cmd.StartProcessInstanceCmd.execute(StartProcessInstanceCmd.java:66)
+	at org.camunda.bpm.engine.impl.cmd.StartProcessInstanceCmd.execute(StartProcessInstanceCmd.java:38)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.ProcessInstantiationBuilderImpl.executeWithVariablesInReturn(ProcessInstantiationBuilderImpl.java:166)
+	at org.camunda.bpm.engine.impl.ProcessInstantiationBuilderImpl.execute(ProcessInstantiationBuilderImpl.java:132)
+	at org.camunda.bpm.engine.impl.ProcessInstantiationBuilderImpl.execute(ProcessInstantiationBuilderImpl.java:128)
+	at org.camunda.bpm.engine.impl.RuntimeServiceImpl.startProcessInstanceByKey(RuntimeServiceImpl.java:110)
+	at com.feeprocess.controller.FeeProcessController.startProcess(FeeProcessController.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-14 13:02:16,255 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/fee-payment-process].[dispatcherServlet] [http-nio-10101-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [/fee-payment-process] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.feeprocess.model.FinancicalRecord.setPaidAmount(double)" because "finRecord" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.feeprocess.model.FinancicalRecord.setPaidAmount(double)" because "finRecord" is null
+	at com.feeprocess.workflow.delegates.UpdateFinancialRecord.execute(UpdateFinancialRecord.java:46)
+	at org.camunda.bpm.engine.impl.bpmn.delegate.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:40)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:58)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:92)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:63)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior$3.call(ServiceTaskDelegateExpressionActivityBehavior.java:118)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior$3.call(ServiceTaskDelegateExpressionActivityBehavior.java:102)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.AbstractBpmnActivityBehavior.executeWithErrorPropagation(AbstractBpmnActivityBehavior.java:90)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.performExecution(ServiceTaskDelegateExpressionActivityBehavior.java:127)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.TaskActivityBehavior.execute(TaskActivityBehavior.java:69)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:61)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:50)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueIfExecutionDoesNotAffectNextOperation(PvmExecutionImpl.java:2039)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:42)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:31)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:634)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:608)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$6.callback(PvmExecutionImpl.java:1978)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$6.callback(PvmExecutionImpl.java:1975)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:2045)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1994)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1975)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:60)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:30)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:66)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:76)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:643)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:76)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:643)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:76)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:643)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:111)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:634)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:608)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionCreateScope.scopeCreated(PvmAtomicOperationTransitionCreateScope.java:38)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:54)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:99)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:131)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:118)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:86)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:634)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:608)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.start(PvmExecutionImpl.java:288)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.start(ExecutionEntity.java:460)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.start(PvmExecutionImpl.java:264)
+	at org.camunda.bpm.engine.impl.cmd.StartProcessInstanceCmd.execute(StartProcessInstanceCmd.java:66)
+	at org.camunda.bpm.engine.impl.cmd.StartProcessInstanceCmd.execute(StartProcessInstanceCmd.java:38)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.ProcessInstantiationBuilderImpl.executeWithVariablesInReturn(ProcessInstantiationBuilderImpl.java:166)
+	at org.camunda.bpm.engine.impl.ProcessInstantiationBuilderImpl.execute(ProcessInstantiationBuilderImpl.java:132)
+	at org.camunda.bpm.engine.impl.ProcessInstantiationBuilderImpl.execute(ProcessInstantiationBuilderImpl.java:128)
+	at org.camunda.bpm.engine.impl.RuntimeServiceImpl.startProcessInstanceByKey(RuntimeServiceImpl.java:110)
+	at com.feeprocess.controller.FeeProcessController.startProcess(FeeProcessController.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-14 13:03:01,485 INFO org.mongodb.driver.connection [Thread-49] Closed connection [connectionId{localValue:19, serverValue:510}] to localhost:27017 because the pool has been closed.
+2025-03-14 13:03:01,500 INFO org.camunda.bpm.engine.jobexecutor [Thread-49] ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-03-14 13:03:01,500 INFO org.camunda.bpm.engine.jobexecutor [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-03-14 13:03:01,518 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+2025-03-14 13:03:01,536 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.history.sql'
+2025-03-14 13:03:01,542 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.engine.sql'
+2025-03-14 13:03:01,574 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql'
+2025-03-14 13:03:01,579 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'case.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.history.sql'
+2025-03-14 13:03:01,590 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql'
+2025-03-14 13:03:01,592 INFO org.camunda.bpm.engine.persistence [Thread-49] ENGINE-03016 Performing database operation 'drop' on component 'identity' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.identity.sql'
+2025-03-14 13:03:01,593 INFO org.camunda.bpm.engine [Thread-49] ENGINE-00007 Process Engine default closed
+2025-03-14 13:03:01,593 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-49] Shutting down ExecutorService 'camundaTaskExecutor'
+2025-03-14 13:03:01,593 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-49] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 13:03:01,595 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-49] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-03-14 13:03:01,813 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-49] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2025-03-14 13:03:01,814 INFO com.zaxxer.hikari.HikariDataSource [Thread-49] HikariPool-9 - Shutdown initiated...
+2025-03-14 13:03:01,816 INFO com.zaxxer.hikari.HikariDataSource [Thread-49] HikariPool-9 - Shutdown completed.
+2025-03-14 13:03:02,051 INFO com.feeprocess.FeeProcessApplication [restartedMain] Starting FeeProcessApplication using Java 21.0.6 on Ahinsingh with PID 8492 (C:\Users\ahins\workspace\fee-process-management\target\classes started by ahins in C:\Users\ahins\workspace\fee-process-management)
+2025-03-14 13:03:02,051 INFO com.feeprocess.FeeProcessApplication [restartedMain] No active profile set, falling back to default profiles: default
+2025-03-14 13:03:02,849 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-03-14 13:03:02,849 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 13:03:02,864 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.feeprocess.repository.FinancialRecordRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2025-03-14 13:03:02,872 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.feeprocess.repository.PaymentRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2025-03-14 13:03:02,872 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2025-03-14 13:03:02,900 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-03-14 13:03:02,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-03-14 13:03:02,918 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 17 ms. Found 2 MongoDB repository interfaces.
+2025-03-14 13:03:03,165 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 10101 (http)
+2025-03-14 13:03:03,165 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-10101"]
+2025-03-14 13:03:03,166 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-03-14 13:03:03,166 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2025-03-14 13:03:03,205 INFO org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/fee-payment-process] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-03-14 13:03:03,205 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1150 ms
+2025-03-14 13:03:03,213 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [restartedMain] Configuring camunda rest api.
+2025-03-14 13:03:03,214 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [restartedMain] Finished configuring camunda rest api.
+2025-03-14 13:03:03,282 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Starting...
+2025-03-14 13:03:03,285 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Start completed.
+2025-03-14 13:03:03,285 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:630b3df3-3eac-4d77-8c20-60f6a89bb413'
+2025-03-14 13:03:03,350 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 13:03:03,364 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-03-14 13:03:03,387 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-14 13:03:03,387 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 13:03:03,405 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-03-14 13:03:03,426 INFO org.camunda.bpm.spring.boot [restartedMain] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-03-14 13:03:03,427 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'camundaTaskExecutor'
+2025-03-14 13:03:03,459 INFO org.camunda.bpm.engine.cfg [restartedMain] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=ahin, firstName=Ahin, lastName=Ahin, email=ahin@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-03-14 13:03:26,926 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [restartedMain] unable to determine if resource URL [jar:file:C:\Users\ahins\.m2\repository\org\camunda\bpm\dmn\camunda-engine-dmn\7.15.0\camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2025-03-14 13:03:26,928 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [restartedMain] unable to determine if resource URL [jar:file:C:\Users\ahins\.m2\repository\org\camunda\bpm\dmn\camunda-engine-feel-api\7.15.0\camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2025-03-14 13:03:26,928 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [restartedMain] unable to determine if resource URL [jar:file:C:\Users\ahins\.m2\repository\org\camunda\bpm\dmn\camunda-engine-feel-juel\7.15.0\camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2025-03-14 13:03:26,929 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [restartedMain] unable to determine if resource URL [jar:file:C:\Users\ahins\.m2\repository\org\camunda\bpm\dmn\camunda-engine-feel-scala\7.15.0\camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2025-03-14 13:03:26,929 INFO org.camunda.bpm.spring.boot [restartedMain] STARTER-SB021 Auto-Deploying resources: [file [C:\Users\ahins\workspace\fee-process-management\target\classes\fee_management_system.bpmn]]
+2025-03-14 13:03:26,929 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [restartedMain] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-03-14 13:03:26,929 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [restartedMain] EVENTING-003: Task events will be published as Spring Events.
+2025-03-14 13:03:26,929 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [restartedMain] EVENTING-005: Execution events will be published as Spring Events.
+2025-03-14 13:03:26,929 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [restartedMain] EVENTING-007: History events will be published as Spring events.
+2025-03-14 13:03:26,930 INFO org.camunda.spin [restartedMain] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-03-14 13:03:26,931 INFO org.camunda.spin [restartedMain] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-03-14 13:03:26,934 INFO org.camunda.spin [restartedMain] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-03-14 13:03:26,934 INFO org.camunda.spin [restartedMain] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-03-14 13:03:26,938 INFO org.camunda.bpm.dmn.feel.scala [restartedMain] FEEL/SCALA-01001 Spin value mapper detected
+2025-03-14 13:03:26,939 INFO org.camunda.feel.FeelEngine [restartedMain] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@55258b, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@66f6ac57)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@751c3ecb, clock: SystemClock, configuration: Configuration(false)]
+2025-03-14 13:03:35,179 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2025-03-14 13:03:35,223 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2025-03-14 13:03:35,236 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2025-03-14 13:03:35,254 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2025-03-14 13:03:35,260 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2025-03-14 13:03:35,265 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2025-03-14 13:03:35,275 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2025-03-14 13:03:35,283 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03067 No history level property found in database
+2025-03-14 13:03:35,284 INFO org.camunda.bpm.engine.persistence [restartedMain] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2025-03-14 13:03:35,351 INFO org.camunda.bpm.engine [restartedMain] ENGINE-00001 Process Engine default created.
+2025-03-14 13:03:35,513 INFO org.camunda.bpm.spring.boot [restartedMain] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=ahin, firstName=Ahin, lastName=Ahin, email=ahin@localhost, password=******]
+2025-03-14 13:03:35,692 WARN org.camunda.bpm.engine.util [restartedMain] ENGINE-09004 Warnings during parsing: 
+* Exclusive Gateway 'PaymentSuccess' has outgoing sequence flow 'Flow_12ll4ve' without condition which is not the default flow. We assume it to be the default flow, but it is bad modeling practice, better set the default flow in your gateway. | resource C:\Users\ahins\workspace\fee-process-management\target\classes\fee_management_system.bpmn
+* Exclusive Gateway 'ReviewApproved' has outgoing sequence flow 'Flow_18mw1m2' without condition which is not the default flow. We assume it to be the default flow, but it is bad modeling practice, better set the default flow in your gateway. | resource C:\Users\ahins\workspace\fee-process-management\target\classes\fee_management_system.bpmn
+2025-03-14 13:03:35,808 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-03-14 13:03:35,827 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='67d3f0e738dfdc2401e6882f', description='null'}-localhost:27017] Opened connection [connectionId{localValue:21, serverValue:512}] to localhost:27017
+2025-03-14 13:03:35,827 INFO org.mongodb.driver.connection [cluster-ClusterId{value='67d3f0e738dfdc2401e6882f', description='null'}-localhost:27017] Opened connection [connectionId{localValue:20, serverValue:511}] to localhost:27017
+2025-03-14 13:03:35,828 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='67d3f0e738dfdc2401e6882f', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8771600}
+2025-03-14 13:03:35,839 WARN org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2025-03-14 13:03:35,928 WARN org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2025-03-14 13:03:36,111 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 13:03:37,501 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [restartedMain] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@302d99e5
+2025-03-14 13:03:37,511 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [restartedMain] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@2e13d92f
+2025-03-14 13:03:37,706 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-10101"]
+2025-03-14 13:03:37,720 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 10101 (http) with context path '/fee-payment-process'
+2025-03-14 13:03:37,733 INFO com.feeprocess.FeeProcessApplication [restartedMain] Started FeeProcessApplication in 35.792 seconds (JVM running for 85287.318)
+2025-03-14 13:03:37,743 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-03-14 13:03:37,745 INFO org.camunda.bpm.engine.jobexecutor [restartedMain] ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-03-14 13:03:37,746 INFO org.camunda.bpm.engine.jobexecutor [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-03-14 14:23:01,188 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-10 housekeeper] HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=37m57s506ms182µs900ns).
+2025-03-14 21:52:14,830 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-10 housekeeper] HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=5h11m41s217ms452µs500ns).
+2025-03-14 21:52:15,383 WARN org.camunda.bpm.engine.telemetry [Camunda BPM Runtime Telemetry Reporter] ENGINE-28002 Could not send initial telemetry data. Reason: ConnectorRequestException with message 'HTCL-02007 Unable to execute HTTP request'. Set this logger to DEBUG/FINE for the full stacktrace.
+2025-03-14 21:52:15,384 WARN org.camunda.bpm.engine.telemetry [Camunda BPM Runtime Telemetry Reporter] ENGINE-28002 Could not send initial telemetry data. Reason: ConnectorRequestException with message 'HTCL-02007 Unable to execute HTTP request'. Set this logger to DEBUG/FINE for the full stacktrace.
+2025-03-14 21:52:15,384 WARN org.camunda.bpm.engine.telemetry [Camunda BPM Runtime Telemetry Reporter] ENGINE-28002 Could not send initial telemetry data. Reason: ConnectorRequestException with message 'HTCL-02007 Unable to execute HTTP request'. Set this logger to DEBUG/FINE for the full stacktrace.
+2025-03-14 21:53:04,683 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-10 housekeeper] HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=55s501ms944µs600ns).

@@ -1,0 +1,73 @@
+2025-05-07 15:07:50,713 INFO c.f.FeeProcessApplication [restartedMain] Starting FeeProcessApplication using Java 21.0.6 with PID 19880 (C:\Users\ahins\workspace\fee-process-management\target\classes started by ahins in C:\Users\ahins\workspace\fee-process-management)
+2025-05-07 15:07:50,722 INFO c.f.FeeProcessApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-05-07 15:07:50,856 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07 15:07:50,858 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07 15:07:53,890 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07 15:07:54,380 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 474 ms. Found 2 JPA repository interfaces.
+2025-05-07 15:07:55,350 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=af789b4c-290f-3dc0-a419-fc50b6e3a8b0
+2025-05-07 15:07:57,393 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2025-05-07 15:07:57,424 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2025-05-07 15:07:57,429 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2025-05-07 15:07:57,430 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-07 15:07:57,549 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-05-07 15:07:57,550 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6691 ms
+2025-05-07 15:07:58,189 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 15:07:58,333 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-07 15:07:58,443 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-05-07 15:07:59,308 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07 15:07:59,390 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-05-07 15:07:59,941 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:feedb user=SA
+2025-05-07 15:07:59,947 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-05-07 15:08:00,063 WARN o.h.o.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 15:08:00,117 INFO o.h.o.c.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 15:08:02,387 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 15:08:02,638 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 15:08:03,723 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-07 15:08:05,702 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 15:08:05,952 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2025-05-07 15:08:06,202 INFO o.s.c.o.FeignClientFactoryBean [restartedMain] For 'student-service' URL not provided. Will try picking an instance via load-balancing.
+2025-05-07 15:08:06,396 INFO o.s.c.o.FeignClientFactoryBean [restartedMain] For 'catalog-service' URL not provided. Will try picking an instance via load-balancing.
+2025-05-07 15:08:07,277 INFO o.s.v.b.OptionalValidatorFactoryBean [restartedMain] Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-07 15:08:09,509 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:feedb'
+2025-05-07 15:08:09,995 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2025-05-07 15:08:10,179 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-07 15:08:10,299 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2025-05-07 15:08:10,355 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2025-05-07 15:08:10,366 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2025-05-07 15:08:10,381 INFO c.n.d.DiscoveryClient [restartedMain] Disable delta property : false
+2025-05-07 15:08:10,381 INFO c.n.d.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2025-05-07 15:08:10,381 INFO c.n.d.DiscoveryClient [restartedMain] Force full registry fetch : false
+2025-05-07 15:08:10,382 INFO c.n.d.DiscoveryClient [restartedMain] Application is null : false
+2025-05-07 15:08:10,382 INFO c.n.d.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2025-05-07 15:08:10,383 INFO c.n.d.DiscoveryClient [restartedMain] Application version is -1: true
+2025-05-07 15:08:10,384 INFO c.n.d.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2025-05-07 15:08:11,363 INFO c.n.d.DiscoveryClient [restartedMain] The response status is 200
+2025-05-07 15:08:11,371 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2025-05-07 15:08:11,379 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-07 15:08:11,382 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1746616091381 with initial instances count: 1
+2025-05-07 15:08:11,444 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application FEE-SERVICE with eureka with status UP
+2025-05-07 15:08:11,446 INFO c.n.d.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1746616091446, current=UP, previous=STARTING]
+2025-05-07 15:08:11,454 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2025-05-07 15:08:11,454 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient_FEE-SERVICE/Ahinsingh:fee-service:8081: registering service...
+2025-05-07 15:08:11,552 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path '/'
+2025-05-07 15:08:11,553 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 8081
+2025-05-07 15:08:11,593 INFO c.f.FeeProcessApplication [restartedMain] Started FeeProcessApplication in 22.393 seconds (process running for 24.757)
+2025-05-07 15:08:11,601 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient_FEE-SERVICE/Ahinsingh:fee-service:8081 - registration status: 204
+2025-05-07 15:13:10,400 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-%d] Resolving eureka endpoints via configuration
+2025-05-07 15:16:09,672 INFO o.a.c.c.C.[.[.[/] [http-nio-8081-exec-7] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07 15:16:09,673 INFO o.s.w.s.DispatcherServlet [http-nio-8081-exec-7] Initializing Servlet 'dispatcherServlet'
+2025-05-07 15:16:09,677 INFO o.s.w.s.DispatcherServlet [http-nio-8081-exec-7] Completed initialization in 4 ms
+2025-05-07 15:16:09,781 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8081-exec-7] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07 15:18:10,402 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-%d] Resolving eureka endpoints via configuration
+2025-05-07 15:23:10,405 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-%d] Resolving eureka endpoints via configuration
+2025-05-07 15:28:10,416 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-%d] Resolving eureka endpoints via configuration
+2025-05-07 15:33:10,417 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-%d] Resolving eureka endpoints via configuration
+2025-05-07 16:33:06,630 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m36s145ms779µs800ns).
+2025-05-07 20:59:54,025 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h24m17s374ms210µs101ns).
